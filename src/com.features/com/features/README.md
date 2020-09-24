@@ -21,3 +21,20 @@ This feature enhances java.util.Locale and related APIs to implement additional 
 ## Root Certificates (JEP 319)
 
 In order to promote OpenJDK and make it more appealing to community users, this feature provides a default set of root Certification Authority (CA) certificates in the JDK. This will also mean that both Oracle & Open JDK binaries will be functionally the same.
+
+## Thread-Local Handshakes (JEP 312)
+
+This feature provides a way to execute a callback on threads without performing a global VM safepoint. Make it both possible and cheap to stop individual threads and not just all threads or none.
+
+## Heap Allocation on Alternative Memory Devices (JEP 316)
+
+This feature enhances the capability of HotSpot VM to allocate the Java object heap on an alternative memory device, such as an NV-DIMM, specified by the user.
+
+## Remove the Native-Header Generation Tool – javah (JEP 313)
+
+The tool functionality is added in javac as part of JDK 8, which provides ability to write native header files at the compile-time rendering javah useless.
+
+## Consolidate the JDK Forest into a Single Repository (JEP 296)
+
+As part of this change, numerous repositories of the JDK forest are combined into a single repository in order to simplify and streamline development.
+
